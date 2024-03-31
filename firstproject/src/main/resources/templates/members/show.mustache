@@ -9,14 +9,15 @@
     </tr>
     </thead>
     <tbody>
-    {{#article}}
+    {{#member}}
         <tr>
             <th>{{id}}</th>
-            <td><a href="/articles/{{id}}">{{title}}</a></td>
-            <td>{{content}}</td>
+            <td><a href="/members/{{id}}">{{email}}</a></td>
+            <td>{{password}}</td>
         </tr>
-    {{/article}}
+    {{/member}}
     </tbody>
 </table>
 
+<a href="/members/index">Go to member list</a>
 {{>layouts/footer}}
